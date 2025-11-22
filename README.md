@@ -124,4 +124,4 @@ const { app, server } = create_platinum_server({
 
 ## License
 
-MIT
+agpl
