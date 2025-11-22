@@ -2,7 +2,7 @@
 
 ![npm version](https://img.shields.io/npm/v/@sythora/platinum.js?color=blue)
 ![npm downloads](https://img.shields.io/npm/dw/@sythora/platinum.js)
-![license](https://img.shields.io/badge/license-MIT-green)
+![license](https://img.shields.io/badge/license-AGPL-purple?color=663366)
 ![node version](https://img.shields.io/badge/node-%3E%3D18.0-brightgreen)
 ![status](https://img.shields.io/badge/status-beta-orange)
 ![proxy engines](https://img.shields.io/badge/proxies-UV%20%7C%20Scramjet-purple)
@@ -122,6 +122,21 @@ const { app, server } = create_platinum_server({
 - Check WISP connection in DevTools
 - Verify transport files are served
 
-## License
+## Copyright notice
+```
+    scythora/Platinum: A flexible web proxy framework to make your skid dream a reality.
+    Copyright (C) 2025 scythora
 
-agpl
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as
+    published by the Free Software Foundation, either version 3 of the
+    License, or (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+```
