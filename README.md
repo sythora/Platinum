@@ -27,7 +27,7 @@ npm install @sythora/platinum.js
 ### Server Setup
 
 ```javascript
-import { create_platinum_server } from './server.js'
+import { init_platinum, navigate } from "/client/index.js";
 
 const { app, server } = create_platinum_server({
   staticDir: 'public',
@@ -41,10 +41,11 @@ server.listen(8080, () => {
 })
 ```
 
+** Ensure that you import it relative to your type in package.json.
 ### Client Setup
 
 ```javascript
-import { init_platinum, navigate } from './client.js'
+import { init_platinum, navigate } from "/client/index.js";
 
 await init_platinum({
   searchEngine: 'google',
@@ -57,6 +58,7 @@ navigate('example.com')
 navigate('search query')
 ```
 
+When you are linking this script, make sure to add type="module"
 ## Configuration
 
 ### Server Options
@@ -87,7 +89,7 @@ navigate('https://example.com')
 ### Perform a search
 
 ```javascript
-navigate('web proxies')
+navigate('search')
 ```
 
 ### Check current config
@@ -124,8 +126,8 @@ const { app, server } = create_platinum_server({
 
 ## Copyright notice
 ```
-    scythora/Platinum: A flexible web proxy framework to make your skid dream a reality.
-    Copyright (C) 2025 scythora
+    sythora/Platinum: A flexible web proxy framework to make your skid dream a reality.
+    Copyright (C) 2025 sythora
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU Affero General Public License as
