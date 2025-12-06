@@ -27,7 +27,7 @@ npm install @sythora/platinum.js
 ### Server Setup
 
 ```javascript
-import { init_platinum, navigate } from "/client/index.js";
+import { create_platinum_server } from "@sythora/platinum.js";
 
 const { app, server } = create_platinum_server({
   staticDir: 'public',
@@ -59,6 +59,12 @@ navigate('search query')
 ```
 
 When you are linking this script, make sure to add type="module"
+Also, if you get scramjet controller errors, include this in your html:
+```html
+<script src="/scram/scramjet.all.js"></script>
+<script src="/baremux/index.js"></script>
+```
+
 ## Configuration
 
 ### Server Options
